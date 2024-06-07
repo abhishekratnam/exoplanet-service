@@ -27,10 +27,16 @@ This microservice manages exoplanets and provides functionalities like adding, l
 
 APIs:-
 
+```
 curl 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117ed5'
+```
+```
 curl 'http://localhost:8080/exoplanets'
-curl 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117ed5/fuel?crew=5'
-curl -X PUT 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117ed5' \
+```
+```curl 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117ed5/fuel?crew=5'
+
+```
+```curl -X PUT 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117ed5' \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Kepler-22b",
@@ -40,8 +46,10 @@ curl -X PUT 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117e
   "mass": 5.5,
   "type": "Terrestrial"
 }'
-curl -X DELETE 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117ed5'
-curl -X POST 'http://localhost:8080/exoplanets' \
+```
+```curl -X DELETE 'http://localhost:8080/exoplanets/3938a08e-3d73-4943-925d-859381117ed5'
+```
+```curl -X POST 'http://localhost:8080/exoplanets' \
 -H "Content-Type: application/json" \
 -d '{
   "name": "Kepler-22b",
@@ -51,4 +59,4 @@ curl -X POST 'http://localhost:8080/exoplanets' \
   "mass": 5.5,
   "type": "Terrestrial"
 }'
-
+```
